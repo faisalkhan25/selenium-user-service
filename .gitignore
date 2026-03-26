@@ -1,33 +1,48 @@
-HELP.md
+# --- Standard Java ---
+*.class
+*.log
+*.jar
+*.war
+*.orig
+*.p12
+*.jks
+*.keystore
+hs_err_pid*
+replay_pid*
+
+# --- Archives ---
+*.zip
+*.tar.gz
+
+# --- Gradle ---
+.gradle/
+build/
+/out/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# --- Maven (if applicable) ---
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
+# --- IntelliJ IDEA ---
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
+gen/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# --- VS Code ---
 .vscode/
+
+# --- Spring Boot & Environment ---
+HELP.md
+.mvn/
+.env
+.env.local
+application-local.yml
+application-local.properties
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
